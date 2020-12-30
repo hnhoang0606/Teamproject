@@ -24,7 +24,18 @@ public:
     string ToString();
     json ToJson();
     void ReadTable();
-    void SetFname(string );
     string GetFName();
+
+    void SetFname(string );
+    void SetMInit(string);
+    void SetLName(string);
+    void SetSSN(long);
+    void SetBDate(string);
+    void SetAddress(string);
+    void SetSex(char);
+    void SetSalary(int);
+    void SetSuperSSN(long);
+    void SetDNO(int);
+    friend Employee EnterInformation();
 };
 #endif

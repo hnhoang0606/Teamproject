@@ -89,6 +89,36 @@ void EmployeeData :: Read_From_File()
         }
 }
 
+void EmployeeData ::Edit_Table()
+{
+    Ui ui;
+    int i;
+    i = ui.ChooseToEdit();
+    cout<<i;
+    Employee employee = EnterInformation();
+    EmployeeData employeeData("Employee.data");
+    employeeData._data[i] = employee;
+    employeeData.ExportToFile("Employee.data");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // int EmployeeData::Update(int i, Products p){
 //     if (i < 0) return -1;
 //     if (i >= _data.size()) return -1;
@@ -98,56 +128,56 @@ void EmployeeData :: Read_From_File()
 //     return maxId;
 // }
 
-void EmployeeData :: EditTable ()
-{
-    EmployeeData employeeData("Employee.data");
-    
-    // EmployeeData employeeData("Employee.data");
-    // for(int i =0; i< employeeData.GetSize(); i++)
-    //     {   
-    //         Employee e = employeeData.Get(i);
-    //         cout<< e.ToString() <<endl;
-    // //     }
-    // cout<<"|** Please enter the row in the table you want to edit **|" <<endl;
-    // cout<<"Row__";
-    // int n; cin >>n;
-    // Employee e2 = employeeData.Get(n);
-    // cout<<e2.ToString()<<endl;
+
+
+// void EmployeeData :: Edit_Table ()
+// {
+//     EmployeeData employeeData("Employee.data");
+//     for(int i =0; i< employeeData.GetSize(); i++)
+//         {   
+//             Employee e = employeeData.Get(i);
+//             cout<< e.ToString() <<endl;
+//         }
+//     cout<<"|** Please enter the row in the table you want to edit **|" <<endl;
+//     cout<<"Row__";
+//     int n; cin >>n;
+//     Employee e2 = employeeData.Get(n);
+//     cout<<e2.ToString()<<endl;
  
-    // cout<<"|**Please choose the item you want to edit in the table **|"<<endl;
-    // cout<<"|** 1. FName **|"<<endl;
-    // cout<<"|** 2. MInit **|"<<endl;
-    // cout<<"|** 3. LName **|"<<endl;
-    // cout<<"|** 4. SSN **|"<<endl;
-    // cout<<"|** 5. BDate **|"<<endl;
-    // cout<<"|** 6. Address **|"<<endl;
-    // cout<<"|** 7. Sex **|"<<endl;
-    // cout<<"|** 8. Salary **|"<<endl;
-    // cout<<"|** 9. SuperSSN **|"<<endl;
-    // cout<<"|** 10. DNO **|"<<endl;
+//     cout<<"|**Please choose the item you want to edit in the table **|"<<endl;
+//     cout<<"|** 1. FName **|"<<endl;
+//     cout<<"|** 2. MInit **|"<<endl;
+//     cout<<"|** 3. LName **|"<<endl;
+//     cout<<"|** 4. SSN **|"<<endl;
+//     cout<<"|** 5. BDate **|"<<endl;
+//     cout<<"|** 6. Address **|"<<endl;
+//     cout<<"|** 7. Sex **|"<<endl;
+//     cout<<"|** 8. Salary **|"<<endl;
+//     cout<<"|** 9. SuperSSN **|"<<endl;
+//     cout<<"|** 10. DNO **|"<<endl;
 
-    // int n2;
-    // cin>>n2;
-    // switch (n2)
-    // {
-    // case 1:
-    //     cout<<"Please enter your content to change.";
-    //     string s1;
-    //     cin>>s1;
-    //     e2.SetFname(s1);
-    //     cout<<"LName d doi " << e2.GetFName()<<endl;
+//     int n2;
+//     cin>>n2;
+//     switch (n2)
+//     {
+//     case 1:
+//         cout<<"Please enter your content to change.";
+//         string s1;
+//         cin>>s1;
+//         e2.SetFname(s1);
+//         cout<<"LName d doi " << e2.GetFName()<<endl;
 
-    //     employeeData._data[1] = e2;
-    //     //employeeData.PushBack(e2);
-    //     employeeData.ExportToFile("Employee.data");
-    //     cout<<endl;
-    //     cout<<"Data has changed"<<endl;
+//         employeeData._data[1] = e2;
+//         //employeeData.PushBack(e2);
+//         employeeData.ExportToFile("Employee.data");
+//         cout<<endl;
+//         cout<<"Data has changed"<<endl;
         
-    //     break;
+//         break;
     
-    // }
+//     }
 
-}
+// }
 
 
 

@@ -9,7 +9,7 @@ class CompanyData
 {
      public:
      virtual void Read_From_File() = 0;
-     virtual void EditTable()=0;
+     virtual void Edit_Table()=0;
 };
 
 #endif

@@ -22,6 +22,6 @@ public:
     EmployeeData(string);
     int ExportToFile(string filename);
     void Read_From_File();
-    void EditTable();
+    void Edit_Table();
 };
 #endif

@@ -69,3 +69,8 @@ string Employee::GetFName()
 {
     return FName;
 }
+
+void Employee :: SetAddress(string s)
+{
+    Address = s;
+}

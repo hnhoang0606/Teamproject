@@ -61,8 +61,11 @@ void Read_Employee_from_file()
     }
 
 int main()
-{   Ui ui;
+{   
+    
+    Ui ui;
     ui.MainInterface();
+    //ui.ChooseToEdit();
     // Company *c1;
     // EmployeeData ea1;
 
